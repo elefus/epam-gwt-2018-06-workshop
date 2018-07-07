@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+              http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+         version="2.5"
+         xmlns="http://java.sun.com/xml/ns/javaee">
+
+  <servlet>
+    <servlet-name>accountServlet</servlet-name>
+    <servlet-class>com.epam.gwt.server.AccountServiceImpl</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>accountServlet</servlet-name>
+    <url-pattern>/githubanalyzer/accounts</url-pattern>
+  </servlet-mapping>
+  
+  <welcome-file-list>
+    <welcome-file>GithubAnalyzer.html</welcome-file>
+  </welcome-file-list>
+</web-app>
